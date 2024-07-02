@@ -1,0 +1,84 @@
+let mapleader = "\<Space>"
+set idearefactormode=keep
+set ideajoin
+
+" Navigate between files
+map <S-h> :action PreviousTab<CR>
+map <S-l> :action NextTab<CR>
+
+" Splitting Windows
+map <leader>v :action SplitVertically<CR>
+map <leader>s :action SplitHorizontally<CR>
+
+" Toggle Full Screen
+map <leader>t :action ToggleFullScreen<CR>
+
+" Searching
+map <leader>/ :action Find<CR>
+map <leader>ns :action FindInPath<CR>
+
+" Replacing in Files
+map <leader>nr :action ReplaceInPath<CR>
+
+" Toggle Sidebar Visibility, doesn't work as expected
+map <leader>b :action HideActiveToolWindow<CR>
+
+" Running Code, doesnt't work as expected
+map <leader>e :action Run<CR>
+
+" Viewing Git, shows VCS operations, not the files that have been changed as
+" desired
+map <leader>g :action Vcs.QuickListPopupAction<CR>
+
+" Reference Trigger
+map <leader>; :action GotoDeclaration<CR>
+
+" Closing Editors
+map <leader>a :action CloseAllEditors<CR>
+
+" File Tree - doesn't work as expected, nothing happens
+map <leader>ne :action ProjectViewProject<CR>
+
+" Saving, Quitting, and Exiting
+map <leader>w :action SaveAll<CR>
+map <leader>q :action CloseContent<CR>
+map <leader>x :action Exit<CR>
+
+" Indenting and Formatting
+map <leader>i :action ReformatCode<CR>
+map <leader>o :action OptimizeImports<CR>
+
+" Definition Preview Hover
+map <leader>gh <C-Shift>i<CR>
+
+" Search for files
+map <leader>f :action FindFile<CR>
+
+
+" Visual Mode Key Bindings
+vmap < :action EditorUnindentSelection<CR>
+vmap > :action EditorIndentSelection<CR>
+map <leader>c :action CommentByLineComment<CR>
+map <leader>y "+y<CR>
+map <leader>p "+p<CR>
+
+" Switch between open panes
+map <leader>h <C-W>h
+map <leader>j <C-W>j
+map <leader>k <C-W>k
+map <leader>l <C-W>l
+
+" extensions
+set surround
+
+" NERDTree setup
+set NERDTree
+map <leader>ne :NERDTree<CR>
+map <leader>nf :NERDTreeFocus<CR>
+map <leader>nt :NERDTreeToggle<CR>
+map <leader>nc :NERDTreeClose<CR>
+map <leader>nf :NERDTreeFind<CR>
+map <leader>nr :NERDTreeRefreshRoot<CR>
+
+" vim commentary
+Plug "tpope/vim-commentary"
