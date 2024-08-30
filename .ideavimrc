@@ -153,7 +153,7 @@ map <leader>gs :action ActivateServicesToolWindow<CR>
 map <leader>ns :action ActivateStructureToolWindow<CR>
 
 " terminal tool window
-map <leader>nt :action ActivateTerminalToolWindow<CR>
+map <leader>mt :action ActivateTerminalToolWindow<CR>
 
 " version control tool window
 map <leader>gv :action ActivateVersionControlToolWindow<CR>
