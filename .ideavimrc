@@ -183,6 +183,16 @@ map <leader>mv :action Arrangement.Alias.Rule.Edit<CR>
 " emoji picker
 map <leader>me :action EmojiPicker.Open<CR>
 
+" show hover info
+map gh :action ShowHoverInfo<CR>
+
+" close active tab
+map <leader>nb :action CloseActiveTab<CR>
+
+" restart ide
+map <leader>r :action RestartIde<CR>
+
+
 
 
 " OOP
