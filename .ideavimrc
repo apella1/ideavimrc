@@ -78,15 +78,14 @@ map <leader>nf :NERDTreeFind<CR>
 " REFACTORING TOOLS
 " changing function signature
 map <leader>ms :action ChangeSignature<CR>
-
 " changes view rename
-map <leader>mr :action ChangesView.Rename<CR>
+map <leader>mr :action RenameElement<CR>
 
 " inspect current file
 map <leader>mi :action CodeInspection.OnEditor<CR>
 
 " collapse block
-map <leader>mc :action CollapseBlock<CR>
+map <leader>mc :action CollapseRegion<CR>
 
 " collapse selection
 map <leader>mo :action CollapseSelection<CR>
