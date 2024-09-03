@@ -191,6 +191,9 @@ map <leader>nb :action CloseActiveTab<CR>
 " restart ide
 map <leader>r :action RestartIde<CR>
 
+" stop running program
+map <leader>ge :action Stop<CR>
+
 
 
 
