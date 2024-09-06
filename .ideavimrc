@@ -157,6 +157,13 @@ map <leader>mt :action ActivateTerminalToolWindow<CR>
 " version control tool window
 map <leader>gv :action ActivateVersionControlToolWindow<CR>
 
+" gradle refresh dependencies
+map gr :action Gradle.RefreshDependencies<CR>
+
+" gradle view dependency analyzer
+map md :action Gradle.ViewDependencyAnalyzer<CR>
+
+
 
 
 " DEBUGGING
