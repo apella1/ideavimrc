@@ -176,6 +176,8 @@ map <leader>md :action Debug<CR>
 
 
 " ANDROID SPECIFIC
+" activating logcat tool window
+map md :action ActivateLogcatToolWindow<CR>
 
 
 
