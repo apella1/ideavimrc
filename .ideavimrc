@@ -179,6 +179,9 @@ map <leader>md :action Debug<CR>
 " activating logcat tool window
 map md :action ActivateLogcatToolWindow<CR>
 
+" override methods
+map <leader>om :action OverrideMethods<CR>
+
 
 
 " FRONTEND SPECIFIC
